@@ -1,0 +1,651 @@
+font,.font
+	font-family 'iconfont'
+
+// 变量
+color_primary = #ffa052
+color_darker = #333
+color_dark = #666
+color_gray = #999
+color_light = #ccc
+color_lighter = #ddd
+default_border_color = #eee
+default_bg_color = #eee
+default_header_height = 48px
+default_tabs_height = 58px
+
+font_little = 13px
+font_small = 15px
+font_normal = 17px
+font_big = 19px
+font_tiny = 21px
+space0 = 0
+space1 = 5px
+space2 = 10px
+space3 = 15px
+space4 = 20px
+
+// 重置浏览器行为
+html
+	color #333
+	background #fff
+	box-sizing border-box
+	-moz-box-sizing border-box /* Firefox */
+	-webkit-box-sizing border-box /* Safari */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size 15px
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li
+	margin 0
+	padding 0
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	line-height 1
+table
+	border-collapse collapse
+	border-spaceing 0
+img
+	border 0
+	max-width: 100%
+a
+	color #333
+	text-decoration none
+p
+	line-height 1.5
+	word-break:break-all;
+ul
+	list-style none
+textarea,input
+	outline none
+	border none
+	-webkit-appearance none
+input[type="button"],input[type="submit"],button
+	outline none
+	border none
+	-webkit-appearance none
+input
+	max-width: 100%
+	font-size 15px
+// color 参考clrs.cc
+.primary
+	color color_primary!important
+.dark
+	color color_dark
+.gray
+	color color_gray
+.light
+	color color_light
+.white
+	color #fff
+.bg
+	background-color default_bg_color
+.bg-primary
+	background-color color_primary
+.bg-red
+	background-color red!important
+.bg-white
+	background-color #fff
+.bg-f5
+	background #f5f5f5
+.bg-blue
+	background-color #74B4F1
+.bg-wathet
+	background-color #88C4FC!important
+.bg-gray
+	background-color color_gray!important
+.bg-light
+	background-color color_light
+.bg-fixed,#my-home,#setting,#myPatient,#myAppointment
+	position fixed
+	width 100%
+	height 100%
+	left 0
+	top 0
+	z-index 0
+	background-color #f5f5f5
+.navy
+	color #001f3f
+.blue
+	color #0074D9
+.aqua
+	color #7fdbff
+.teal
+	color #39cccc
+.olive
+	color #3d9970
+.green
+	color #2ECC40
+.lime
+	color #01ff70
+.yellow
+	color #FFDC00
+.orange
+	color #ff851b
+.red
+	color #FF4136
+.maroon
+	color #85144b
+.fuchsia
+	color #f012be
+.purple
+	color #b10dc9
+.silver
+	color #ddd
+
+
+// font
+.f5,.little,h5
+	font-size 13px
+.f4,.small,h4
+	font-size 15px
+.f3,.normal,h3
+	font-size 17px
+.f2,.big,h2
+	font-size 19px
+.f1,.tiny,h1
+	font-size 21px
+.bold
+	font-weight bold
+
+// line-height
+.lh1
+	line-height 1
+.lh15
+	line-height 1.5
+.lh18
+	line-height 1.8
+.lh2
+	line-height 2
+//height&line-height
+
+
+// margin
+.m0
+	margin 0
+.m1
+	margin space1
+.m2
+	margin space2
+.m3
+	margin space3
+.m4
+	margin space4
+
+.mt1
+	margin-top space1
+.mt2
+	margin-top space2
+.mt3
+	margin-top space3
+.mt4
+	margin-top space4
+
+.mr1
+	margin-right space1
+.mr2
+	margin-right space2
+.mr3
+	margin-right space3
+.mr4
+	margin-right space4
+
+.mb1
+	margin-bottom space1
+.mb2
+	margin-bottom space2
+.mb3
+	margin-bottom space3
+.mb4
+	margin-bottom space4
+
+.ml1
+	margin-left space1
+.ml2
+	margin-left space2
+.ml3
+	margin-left space3
+.ml4
+	margin-left space4
+
+.mx-auto
+	margin-left auto
+	margin-right auto
+.mx1
+	margin-left space1
+	margin-right space1
+.mx2
+	margin-left space2
+	margin-right space2
+.mx3
+	margin-left space3
+	margin-right space3
+.mx4
+	margin-left space4
+	margin-right space4
+
+.my1
+	margin-top space1
+	margin-bottom space1
+.my2
+	margin-top space2
+	margin-bottom space2
+.my3
+	margin-top space3
+	margin-bottom space3
+.my4
+	margin-top space4
+	margin-bottom space4
+
+
+// padding
+.p0
+	padding 0
+.p1
+	padding space1
+.p2
+	padding space2
+.p3
+	padding space3
+.p4
+	padding space4
+
+.pt1
+	padding-top space1
+.pt2
+	padding-top space2
+.pt3
+	padding-top space3
+.pt4
+	padding-top space4
+
+.pr1
+	padding-right space1
+.pr2
+	padding-right space2
+.pr3
+	padding-right space3
+.pr4
+	padding-right space4
+
+.pb1
+	padding-bottom space1
+.pb2
+	padding-bottom space2
+.pb3
+	padding-bottom space3
+.pb4
+	padding-bottom space4
+
+.pl1
+	padding-left space1
+.pl2
+	padding-left space2
+.pl3
+	padding-left space3
+.pl4
+	padding-left space4
+
+.px-auto
+	padding-left auto
+	padding-right auto
+.px1
+	padding-left space1
+	padding-right space1
+.px2
+	padding-left space2
+	padding-right space2
+.px3
+	padding-left space3
+	padding-right space3
+.px4
+	padding-left space4
+	padding-right space4
+
+.py1
+	padding-top space1
+	padding-bottom space1
+.py2
+	padding-top space2
+	padding-bottom space2
+.py3
+	padding-top space3
+	padding-bottom space3
+.py4
+	padding-top space4
+	padding-bottom space4
+
+half-border(b)
+	position relative
+	&:after
+		content ''
+		display block
+		z-index 0
+		transform-origin 0 0
+		position absolute
+		if b==left
+			top 0px
+			left 0px
+			height 100%
+			width 1px
+			border-left 1px solid default_border_color
+			transform scaleX(0.5)
+		if b==right
+			top 0px
+			right 0px
+			height 100%
+			width 1px
+			border-right 1px solid default_border_color
+			transform scaleX(0.5)
+		if b==top
+			top 0px
+			left 0px
+			width 100%
+			height 1px
+			border-top 1px solid default_border_color
+			transform scaleY(0.5)
+		if b==bottom
+			bottom 0px
+			left 0px
+			transform-origin 0 100%
+			width: 100%
+			height: 1px
+			border-bottom 1px solid default_border_color
+			transform: scaleY(0.5)
+// border
+.border
+	border:1px solid default_border_color
+.border-top
+	half-border(top)
+.border-bottom
+	half-border(bottom)
+.border-left
+	half-border(left)
+.border-right
+	half-border(right)
+.border-light
+	border-color color_light
+.border-lighter
+	border-color color_lighter
+.border-dashed:after//仅底部
+	border-style none none dashed none
+.border-primary
+	border-color color_primary
+.primary-bottom
+	position relative
+	// border-bottom 2px solid color_primary
+.primary-bottom:after
+	content:''
+	position absolute
+	left: 50%;
+	bottom 1px
+	transform: translate(-50%,0%);
+	animation:mymove 0.5s alternate forwards;
+	background color_primary
+	// height:2px
+	width 0%;
+	border-radius 2px
+	border-bottom 2px solid color_primary
+@keyframes mymove
+	from {width:0px;}
+	to {width:100%;}
+.border-odd:nth-of-type(odd)
+	box-sizing border-box
+	-moz-box-sizing border-box /* Firefox */
+	-webkit-box-sizing border-box /* Safari */
+	border-right 1px solid default_border_color
+	border-left 1px solid default_border_color
+// border-radius
+.round-min
+	border-radius 3px
+.round
+	border-radius 5px
+.rounder
+	border-radius 10px
+.circle
+	border-radius 50%
+// flex
+
+.xy-center
+	flex-direction row
+	justify-content center
+	-webkit-justify-content center
+	align-items center
+	-webkit-align-items: center;
+	// flex
+.flex
+	display flex
+	display -webkit-box/* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+	display -webkit-flex /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+	vertical-align text-top
+.column
+	-webkit-flex-direction column
+	flex-direction column
+.justify-start
+	-webkit-justify-content flex-start
+	justify-content flex-start
+.justify-between
+	justify-content space-between
+.justify-around
+	justify-content space-around
+.align-start
+	-webkit-align-items flex-start
+	align-items flex-start
+.align-end
+	-webkit-align-items flex-end
+	align-items flex-end
+.align-center
+	align-items center
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+.flex-wrap-reverse
+	-webkit-flex-wrap wrap-reverse
+	flex-wrap wrap-reverse
+.flex-max
+	-webkit-box-flex 1
+	-webkit-flex 1
+	flex 1
+.justify-end
+	-webkit-justify-content flex-end
+	justify-content flex-end
+.justify-center
+	-webkit-justify-content center
+	justify-content center
+.self-center
+	align-self center
+.wrap
+	flex-wrap wrap
+	-webkit-flex-wrap wrap
+//transform
+.rotate
+	transform rotate(180deg)
+	-ms-transform rotate(180deg) /* Internet Explorer */
+	-moz-transform rotate(180deg) /* Firefox */
+	-webkit-transform rotate(180deg) /* Safari 和 Chrome */
+	-o-transform rotate(180deg) /* Opera */
+
+.rotate-ninety
+	transform rotate(90deg)
+	-ms-transform rotate(90deg) /* Internet Explorer */
+	-moz-transform rotate(90deg) /* Firefox */
+	-webkit-transform rotate(90deg) /* Safari 和 Chrome */
+	-o-transform rotate(90deg) /* Opera */
+
+// position
+.absolute
+	position absolute
+.relative
+	position relative
+.fixed
+	position fixed!important
+	z-index: 99
+.top0
+	top 0
+.right0
+	right 0
+.bottom0
+	bottom 0
+.left0
+	left 0
+.w1
+	width 10%
+.w2
+	width 20%
+.w3
+	width 30%
+.w4
+	width 40%
+.w5
+	width 50%
+.w6
+	width 60%
+.w7
+	width 70%
+.w8
+	width 80%
+.w9
+	width 90%
+.w10
+	width 100%
+.w25
+	width 25%
+.w33
+	width 33%
+.w34
+	width 34%
+.w66
+	width 66%
+.w67
+	width 67%
+.w96
+	width: 96%
+.fit //强制fit可使用w10
+	max-width 100%
+	height auto
+//float
+.float-l
+	float left
+.float-r
+	float right
+.clear-f
+	position:relative
+.clear-f:after
+	position absolute
+	content ''
+	display block
+	height 0
+// display
+.block
+	display block
+.inline
+	display inline
+.inline-block
+	display inline-block
+.block-hide
+	display none
+.visible-hidden
+	visibility: hidden
+// align
+.text-left
+	text-align left
+.text-center
+	text-align center
+.text-right
+	text-align right
+
+// 其他
+.overflow-visible
+	overflow-x visible!important
+	overflow-y visible!important
+.overflow
+	overflow hidden
+.overflow-y
+	overflow-y auto
+	-webkit-overflow-scrolling touch
+.z-index1
+ z-index 1
+.omit
+	text-overflow ellipsis
+	overflow hidden
+	white-space nowrap
+.omit2
+	overflow  hidden
+	text-overflow ellipsis
+	display -webkit-box
+	-webkit-line-clamp 2
+	-webkit-box-orient vertical
+.box-sizing
+	box-sizing border-box
+	-moz-box-sizing border-box /* Firefox */
+	-webkit-box-sizing border-box /* Safari */
+.bit-font{
+		background: transparent;
+		font-size: 16px;
+		i{
+			font-style:normal
+			font-family: 'iconfont';
+			position: relative;
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+		}
+		i:before{
+			color: #ccc;
+			position: absolute;
+			content: "\e600";
+			left: 0;
+		}
+		i.hover:before{
+			color: color_primary
+			position: absolute;
+			content: "\e600";
+			left: 0;
+		}
+	}
+// header
+.header
+	position fixed
+	background #fff
+	z-index 999
+	top 0
+	left 0
+	right 0
+	height default_header_height
+	border-bottom 1px solid #ddd
+	text-align center
+	vertical-align middle
+	line-height default_header_height
+	@extend .big
+.has-header
+	position absolute
+	top default_header_height
+
+// main
+.main
+	position absolute
+	top default_header_height
+	bottom default_tabs_height
+	width 100%
+	overflow-y auto
+	-webkit-overflow-scrolling touch
+//处理字体图标与text垂直问题
+.v-middle
+	vertical-align middle
+// input
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	font-family: 'iconfont';
+}
+// from
+
+//自定义10px bg块
+.bottom_bg
+	position relative
+.bottom_bg:after
+	position: absolute;
+	top:100%;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 10px;
+	background-color: #f5f5f5;
