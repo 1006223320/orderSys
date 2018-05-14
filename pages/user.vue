@@ -1,6 +1,6 @@
 <template lang='pug'>
   #user
-    mytabbar(tabIndex='1')
+    mytabbar(tabIndex='1' )
 </template>
 
 <script>

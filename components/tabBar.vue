@@ -1,6 +1,6 @@
 <template lang="pug">
- tabbar
-    tabbar-item( selected , link="/")
+ tabbar(v-model="tabIndex",)
+    tabbar-item( link="/")
         img(slot="icon" src="https://github.com/fluidicon.png")
         span(slot="label") Wechat
     tabbar-item( link="/user")
