@@ -1,6 +1,6 @@
 <template lang='pug'>
   section.container
-    app-logo
+    //- app-logo
 </template>
 
 <script>

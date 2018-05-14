@@ -1,9 +1,12 @@
+const path = require('path')
+const vuxLoader = require('vux-loader')
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'ordersys',
+    title: 'demo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,6 +20,20 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  css: [
+    'vux/src/styles/reset.less',
+    'vux/src/styles/1px.less'
+  ],
+  plugins: [
+    {
+      src: '~/plugins/vux-plugins',
+      ssr: false
+    },
+    {
+      src: '~/plugins/vux-components',
+      ssr: true
+    }
+  ],
   /*
   ** Build configuration
   */
@@ -33,6 +50,13 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      const configs = vuxLoader.merge(config, {
+        options: {
+          ssr: true
+        },
+        plugins: ['vux-ui'] 
+      })
+      return configs
     }
   }
 }
