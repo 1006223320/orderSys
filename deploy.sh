@@ -1,2 +1,2 @@
-#!/bin/sh
-echo '>>> 部署【Vue】'
+    #!/bin/sh
+echo 'test'
