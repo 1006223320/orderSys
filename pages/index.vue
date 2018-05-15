@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 import mytabbar from "../components/tabBar"
 
 export default {
